@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0D1F2E" />
+  <meta name="description" content="偽書堂（ぎしょどう）は、ミステリー・ホラー・怪異・叙述トリックを中心に制作するインディーゲームサークルです。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="偽書堂" />
+  <meta property="og:title" content="偽書堂 | ミステリーと、少しの怪異を。" />
+  <meta property="og:description" content="在りえない物語を、あなたの手へ。ミステリー・ホラーゲーム制作サークル。" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>偽書堂｜ミステリーと、少しの怪異を。</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+  <script defer src="site.config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- INTRO: Intro can be disabled/configured in site.config.js. -->
+  <div class="intro" id="intro" aria-label="偽書堂のオープニング演出" role="status">
+    <div class="intro-inner">
+      <img class="intro-logo" src="assets/gishodo-logo.png" alt="偽書堂" width="240" height="235" />
+      <p class="intro-copy">ミステリーと、少しの怪異を。</p>
+      <div class="intro-line" aria-hidden="true"><span></span></div>
+    </div>
+    <button id="skipIntro" class="intro-skip" type="button">SKIP <span aria-hidden="true">↗</span></button>
+  </div>
+
+  <div class="site-shell" id="siteShell">
+    <header class="header" id="top">
+      <a class="brand" href="#home" aria-label="偽書堂 ホーム">
+        <img class="brand-mark" src="assets/gishodo-logo.png" alt="" width="60" height="60" />
+        <span class="brand-text"><strong>偽書堂</strong><small>GISHODO / GAME CIRCLE</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="メインナビゲーション">
+        <a href="#home" class="active">HOME</a><a href="#games">GAME</a><a href="tool.html">TOOL</a><a href="#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="#news">NEWS</a><a href="#contact">CONTACT</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+    <nav class="mobile-nav" id="mobileNav" aria-label="モバイルメニュー" hidden>
+      <a href="#home">HOME</a><a href="#games">GAME</a><a href="tool.html">TOOL</a><a href="#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="#news">NEWS</a><a href="#contact">CONTACT</a>
+    </nav>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="heroTitle">
+        <div class="hero-art" aria-hidden="true"></div>
+        <div class="hero-accent" aria-hidden="true"><span></span></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <p class="eyebrow hero-eyebrow"><i></i> INDEPENDENT GAME CIRCLE <span class="hero-id">— GISHODO</span></p>
+            <h1 id="heroTitle">在りえない物語を、<br /><em>あなたの手へ。</em></h1>
+            <div class="short-line"></div>
+            <p class="hero-caption">気づいたときには、もう遅い。<br />日常の隙間に潜む違和感と、<br />思い込みの向こう側にある真実。</p>
+            <p class="hero-sub">ミステリー・ホラー・怪異を中心に、<br />物語とゲームを制作する創作サークルです。</p>
+            <a class="outline-btn" href="#games">制作ゲームを見る <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="hero-side" aria-hidden="true">虚構の先に、真実はあるか。</p>
+        <a class="scroll-note" href="#games"><span>SCROLL TO EXPLORE</span><b aria-hidden="true"></b></a>
+        <span class="hero-corner hero-corner-a" aria-hidden="true"></span>
+        <span class="hero-corner hero-corner-b" aria-hidden="true"></span>
+      </section>
+
+      <section class="games section-pad" id="games" aria-labelledby="gamesTitle">
+        <div class="section-inner">
+          <div class="section-title-row">
+            <div><p class="eyebrow"><i></i> OUR GAMES / 作品</p><h2 id="gamesTitle">制作ゲーム<span class="jp-dot">。</span></h2><p class="section-lead">あなたが見ているものは、本当に真実だろうか。</p></div>
+            <span class="section-index">01 / WORKS</span>
+          </div>
+          <div class="game-list">
+            <article class="game-card">
+              <div class="game-visual"><img src="assets/breakfast-cover.png" alt="窓辺の朝食のイラスト" loading="lazy" /><span class="game-number">CASE / 001</span></div>
+              <div class="game-content"><div class="game-card-head"><span class="tag">料理 × 叙述トリック</span><span class="game-status">制作中</span></div>
+                <h3>『最■の朝食を、君に。』</h3>
+                <p class="game-english">The Breakfast for You</p>
+                <p class="game-description">大切な人のために作る、いつもの朝ごはん。<br />何気ない幸福のひとときを描く、短編料理シミュレーション×心理ホラーADV。</p>
+                <div class="game-actions"><a href="breakfast.html" class="text-btn game-page-link">公式作品ページ <span aria-hidden="true">↗</span></a><a class="play-link" data-link="breakfast" target="_blank" rel="noopener noreferrer" hidden>ゲームをプレイ <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </article>
+            <article class="game-card">
+              <div class="game-visual"><img src="assets/mystery-cover.png" alt="赤い光が漏れる扉のイラスト" loading="lazy" /><span class="game-number">CASE / 002</span></div>
+              <div class="game-content"><div class="game-card-head"><span class="tag">探索 × ミステリー</span><span class="game-status">企画・制作中</span></div>
+                <h3>『死人に口なし、神のみぞ知る』</h3>
+                <p class="game-english">Mystery / Suspense ADV</p>
+                <p class="game-description">友人の死をきっかけに、日常の裏に隠された秘密を追う。<br />証拠を調べ、言葉の隙間から真実に迫る探索ミステリー。</p>
+                <div class="game-actions"><button type="button" class="text-btn game-detail" data-game="mystery">作品について <span aria-hidden="true">↗</span></button><a class="play-link" data-link="mystery" target="_blank" rel="noopener noreferrer" hidden>ゲームをプレイ <span aria-hidden="true">↗</span></a></div>
+              </div>
+            </article>
+          </div>
+          <p class="works-footnote">MORE STORIES WILL FOLLOW <span aria-hidden="true">✦</span>　次の物語は、まだ秘密。</p>
+        </div>
+      </section>
+
+      <section class="about section-pad" id="about" aria-labelledby="aboutTitle">
+        <div class="section-inner about-grid">
+          <div class="about-ornament" aria-hidden="true">
+    <img
+        src="assets/gishodo-logo.png"
+        class="about-logo"
+        alt=""
+    >
+    <span class="ornament-text">FICTION / REALITY</span>
+</div>
+          <div class="about-copy">
+            <p class="eyebrow"><i></i> ABOUT / サークルについて</p>
+            <h2 id="aboutTitle">嘘と真実の、<br />境界を描く。</h2>
+            <div class="short-line"></div>
+            <p>偽書堂（ぎしょどう）は、ミステリー、ホラー、怪異、叙述トリックを中心に制作するインディーゲームサークルです。</p>
+            <p>日常に溶け込む小さな違和感や、見方が変わることで意味が反転する物語を大切にしています。シナリオ・イラスト・演出の制作では、人の創作とAIツールを組み合わせ、新しい表現に挑戦しています。</p>
+            <p class="about-byline">CREATOR <a class="creator-profile-link" href="profile.html" aria-label="遠廼まちのプロフィールを見る"><span>遠廼まち（とおの まち）</span><span class="creator-profile-arrow" aria-hidden="true">↗</span></a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="news section-pad" id="news" aria-labelledby="newsTitle">
+        <div class="section-inner">
+          <div class="section-title-row"><div><p class="eyebrow"><i></i> INFORMATION</p><h2 id="newsTitle">お知らせ<span class="jp-dot">。</span></h2></div><span class="section-index">02 / NEWS</span></div>
+          <div id="newsList" class="news-list"><p class="news-empty">現在、お知らせはありません。</p></div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact" aria-labelledby="contactTitle">
+        <div class="section-inner contact-layout">
+          <div><p class="eyebrow"><i></i> CONTACT</p><h2 id="contactTitle">物語の、その先で。</h2><p>ご感想・お問い合わせは、公開中の連絡先からお送りください。</p></div>
+          <div class="socials" id="socials"><a data-link="x" target="_blank" rel="noopener noreferrer" hidden>X (Twitter) ↗</a><a data-link="note" target="_blank" rel="noopener noreferrer" hidden>note ↗</a><a data-link="youtube" target="_blank" rel="noopener noreferrer" hidden>YouTube ↗</a><a data-link="email" hidden>MAIL ↗</a><span id="socialsEmpty" class="contact-empty">連絡先は準備中です。</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="section-inner footer-grid"><div class="footer-brand"><img src="assets/gishodo-logo.png" alt="" width="64" height="64" /><div><strong>偽書堂</strong><small>ミステリーと、少しの怪異を。</small></div></div><div class="footer-meta"><a href="#home">BACK TO TOP ↑</a><small>© <span id="copyrightYear">2026</span> 偽書堂 / GISHODO</small></div></div></footer>
+  </div>
+
+  <dialog id="gameDialog" class="game-dialog" aria-labelledby="dialogTitle"><div class="dialog-layout"><button class="dialog-close" id="closeDialog" type="button" aria-label="閉じる">×</button><span class="eyebrow">GAME DETAILS</span><h2 id="dialogTitle"></h2><p id="dialogCategory" class="dialog-category"></p><p id="dialogDescription" class="dialog-description"></p><a id="dialogPlay" class="outline-btn" target="_blank" rel="noopener noreferrer" hidden>ゲームをプレイ ↗</a><p id="dialogNote" class="dialog-note">配布・詳細ページは準備中です。</p></div></dialog>
+</body>
+</html>

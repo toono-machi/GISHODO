@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 145" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<defs><linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff5e5"/><stop offset="1" stop-color="#e7d9c9"/></linearGradient></defs>
+
+  <g fill="url(#paper)" stroke="#263b44" stroke-width="2"><path d="M22 23h53l-7 67-54-10z"/><rect x="187" y="22" width="59" height="42" rx="3"/><rect x="23" y="100" width="72" height="35" rx="3"/><rect x="178" y="98" width="68" height="38" rx="3"/></g>
+  <g stroke="#9f9e93" stroke-width="2.4"><path d="M38 60h22m-22 8h15m148-30h29m-29 8h24m-165 70h47m-47 8h32m111-12h28m-28 9h20"/></g>
+  <g fill="#60727a" stroke="#263b44"><circle cx="46" cy="40" r="9"/><path d="M30 58q16-13 33 0v11H30z"/></g>
+  <g stroke="#af7668" stroke-width="2.1"><path d="M89 52l43 20 55-25M132 72l-5 35m5-35 56 45m-99-20 43-25"/></g>
+  <g fill="#c0796a" stroke="#fff2df" stroke-width="2"><rect x="110" y="52" width="43" height="43" rx="6"/><circle cx="132" cy="72" r="4"/></g>
+  <text x="132" y="84" text-anchor="middle" fill="#fff2df" stroke="none" font-family="Georgia,serif" font-size="30" font-style="italic">?</text>
+  <circle cx="89" cy="52" r="4" fill="#af7668"/><circle cx="188" cy="47" r="4" fill="#af7668"/><circle cx="127" cy="107" r="4" fill="#af7668"/>
+</svg>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0D1F2E" />
+  <meta name="description" content="偽書堂の自作制作ツール一覧。シナリオ・音声・BGM・歌詞演出・ミステリー設計・背景素材生成など、ブラウザで使える7つの道具を紹介します。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="偽書堂" />
+  <meta property="og:title" content="TOOL｜創作を支える、小さな道具たち。｜偽書堂" />
+  <meta property="og:description" content="ゲームや物語の制作に役立つ、自作ブラウザツール7選。" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>TOOL｜創作を支える、小さな道具たち。｜偽書堂</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="tool.css" />
+  <script defer src="tool.js"></script>
+</head>
+<body class="tool-page">
+  <header class="header" id="top">
+    <a class="brand" href="index.html#home" aria-label="偽書堂 ホームへ戻る">
+      <img class="brand-mark" src="assets/gishodo-logo.png" alt="" width="60" height="60" />
+      <span class="brand-text"><strong>偽書堂</strong><small>GISHODO / GAME CIRCLE</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="メインナビゲーション">
+      <a href="index.html#home">HOME</a><a href="index.html#games">GAME</a><a href="tool.html" class="active" aria-current="page">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-label="モバイルメニュー" hidden>
+    <a href="index.html#home">HOME</a><a href="index.html#games">GAME</a><a href="tool.html" aria-current="page">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
+  </nav>
+
+  <main class="tool-main">
+    <section class="tool-hero" aria-labelledby="toolPageTitle">
+      <div class="tool-frame">
+        <div class="tool-frame-upper" aria-hidden="true"><span></span><span></span></div>
+        <div class="tool-headline">
+          <h1 id="toolPageTitle"><em>T</em>OOL</h1>
+          <span class="tool-title-divider" aria-hidden="true"></span>
+          <p>創作を支える、小さな道具たち。</p>
+          <span class="tool-hero-label">TOOLS / 制作ツール</span>
+        </div>
+      </div>
+      <p class="tool-lead">ゲームや映像、シナリオ制作のために作った、<br class="lead-break" />ブラウザで使える自作の制作ツールをまとめています。</p>
+      <div class="tool-catalog-line"><span>TOOLS CATALOG</span><span>01 — 07</span></div>
+    </section>
+
+    <section class="tool-list" aria-label="自作ツール一覧">
+      <div class="tool-card-grid">
+      <a class="tool-card" href="https://toono-machi.github.io/kotonoha_atelier/" target="_blank" rel="noopener noreferrer" aria-label="ことのはアトリエを新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">01</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/kotonoha.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">ことのはアトリエ</span>
+          <span class="tool-card-subtitle">KS SCENARIO EDITOR</span>
+          <span class="tool-card-description">ティラノビルダー向けのKSシナリオを作成・編集。台詞の抽出やキャラクター管理にも対応した、物語を書くためのエディター。</span>
+          <span class="tool-card-tags"><span>シナリオ制作</span><span>ティラノビルダー</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="tool-card" href="https://toono-machi.github.io/koesoroe/" target="_blank" rel="noopener noreferrer" aria-label="こえそろえを新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">02</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/koesoroe.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">こえそろえ</span>
+          <span class="tool-card-subtitle">VOICE LEVELING STUDIO</span>
+          <span class="tool-card-description">複数の台詞音声をまとめて読み込み、音量差を調整。WAV・MP3の聴き比べから一括書き出しまで、声の素材をきれいにそろえます。</span>
+          <span class="tool-card-tags"><span>音声編集</span><span>一括音量調整</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="tool-card" href="https://toono-machi.github.io/Sound_loop_shitate/" target="_blank" rel="noopener noreferrer" aria-label="ループ仕立てを新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">03</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/loop.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">ループ仕立て</span>
+          <span class="tool-card-subtitle">SOUND LOOP STUDIO</span>
+          <span class="tool-card-description">BGMの始点と終点を指定し、クロスフェードで自然な継ぎ目に。繰り返し再生に使いやすいループ音源を作るツール。</span>
+          <span class="tool-card-tags"><span>BGM編集</span><span>ループ制作</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="tool-card" href="https://toono-machi.github.io/Short_shitate/" target="_blank" rel="noopener noreferrer" aria-label="ショート仕立てを新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">04</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/short.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">ショート仕立て</span>
+          <span class="tool-card-subtitle">SOUND SHORT EDITOR</span>
+          <span class="tool-card-description">フル尺の楽曲の中間をカットし、前半と後半をなめらかにつないで短縮。試聴しながら自然なショート版を作成できます。</span>
+          <span class="tool-card-tags"><span>楽曲編集</span><span>ショート版制作</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="tool-card" href="https://toono-machi.github.io/shinso_sekkeishitsu/" target="_blank" rel="noopener noreferrer" aria-label="真相設計室を新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">05</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/shinso.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">真相設計室</span>
+          <span class="tool-card-subtitle">MYSTERY SCENARIO ARCHITECT</span>
+          <span class="tool-card-description">事件の真相・証拠・伏線・分岐を一か所に整理。情報公開管理や矛盾チェックもできる、ミステリーのための設計室。</span>
+          <span class="tool-card-tags"><span>ミステリー制作</span><span>プロット設計</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="tool-card" href="https://toono-machi.github.io/ChocoLyric_TyranoBuilder_Studio/" target="_blank" rel="noopener noreferrer" aria-label="ChocoLyric Studioを新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">06</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/chocolyric.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">ChocoLyric Studio</span>
+          <span class="tool-card-subtitle">LYRICS &amp; END CREDITS</span>
+          <span class="tool-card-description">歌詞表示・エンドロール・映像のタイミングや見た目をプレビューで調整。ティラノビルダー向けの演出データを書き出せます。</span>
+          <span class="tool-card-tags"><span>歌詞演出</span><span>エンドロール</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="tool-card" href="https://toono-machi.github.io/BOOK-SPINE-GENERATOR/" target="_blank" rel="noopener noreferrer" aria-label="せぼねを新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">07</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/sebone.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">せぼね</span>
+          <span class="tool-card-subtitle">BOOK SPINE GENERATOR</span>
+          <span class="tool-card-description">本の高さ・幅・色をランダムに組み合わせて背表紙の列を生成。タイトルも添えられ、背景イラスト用の透過PNGとして保存できます。</span>
+          <span class="tool-card-tags"><span>イラスト補助</span><span>背景素材</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+        <div class="tool-ornament" aria-hidden="true">
+          <div><span>BROWSER TOOLS</span><span>FOR CREATION</span><i></i></div>
+          <img src="assets/tools/shelf.svg" alt="" width="270" height="145" loading="lazy" />
+        </div>
+      </div>
+      <p class="tool-endnote"><span>✧</span> MADE WITH CURIOSITY, FOR CREATORS <span>✧</span></p>
+    </section>
+  </main>
+
+  <footer class="footer tool-footer"><div class="section-inner footer-grid"><a href="index.html#home" class="footer-brand"><img src="assets/gishodo-logo.png" alt="" width="64" height="64" /><div><strong>偽書堂</strong><small>ミステリーと、少しの怪異を。</small></div></a><div class="footer-meta"><a href="#top">BACK TO TOP ↑</a><small>© <span id="copyrightYear">2026</span> 偽書堂 / GISHODO</small></div></div></footer>
+</body>
+</html>

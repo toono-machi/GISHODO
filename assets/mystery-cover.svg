@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 530" role="img" aria-label="暗い廊下の扉を描いたフラットイラスト">
+<rect width="900" height="530" fill="#0D1F2E"/>
+<path d="M0 0H900L630 530H280Z" fill="#152B3E"/>
+<path d="M160 40h580v490H160z" fill="#2A4757"/>
+<path d="M212 0h480v530H212Z" fill="#385772"/>
+<path d="M264 0h390v530H264Z" fill="#152B3E"/>
+<path d="M332 33h266v464H332Z" fill="#0D1F2E" stroke="#69899E" stroke-width="6"/>
+<path d="M362 65h200v398H362Z" fill="#152B3E" stroke="#385772" stroke-width="7"/>
+<path d="M560 65l-10 398 28-10V71Z" fill="#E88B76"/>
+<path d="M544 75l-11 367-120 70-120 18 240-88Z" fill="#C65E5E" opacity=".44"/>
+<circle cx="534" cy="280" r="7" fill="#FFF2DC"/>
+<path d="M0 530 332 390v140Zm900 0L598 390v140Z" fill="#0D1F2E"/>
+<path d="M0 60h240M660 60h240" stroke="#2A4757" stroke-width="6"/>
+<path d="M115 140l78-15M715 125l72 17" stroke="#69899E" opacity=".35" stroke-width="3"/>
+</svg>

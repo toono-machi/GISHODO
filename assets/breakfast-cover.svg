@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 530" role="img" aria-label="朝の食卓を描いたフラットイラスト">
+<rect width="900" height="530" fill="#152B3E"/>
+<rect x="500" y="0" width="400" height="344" fill="#385772"/>
+<path d="M530 0H900V316H530Z" fill="#2A4757"/>
+<path d="M575 0V316M740 0V316M530 245H900" stroke="#0D1F2E" stroke-width="20" fill="none"/>
+<path d="M600 10H734L540 295V120Z" fill="#F7C797" opacity=".84"/>
+<path d="M700 10H870L645 310H530Z" fill="#FFF2DC" opacity=".36"/>
+<path d="M0 356L900 356 900 530 0 530Z" fill="#2A4757"/>
+<path d="M0 425L900 356 900 530H0Z" fill="#385772"/>
+<ellipse cx="435" cy="438" rx="270" ry="75" fill="#0D1F2E" opacity=".55"/>
+<ellipse cx="425" cy="407" rx="244" ry="72" fill="#F6E9DA"/>
+<ellipse cx="425" cy="403" rx="194" ry="51" fill="#D7DBD7"/>
+<path d="M315 370l175-29 79 59-175 27Z" fill="#B87D77"/>
+<path d="M330 359l165-24 67 56-166 23Z" fill="#F7C797"/>
+<path d="M357 365l120-16 51 39-124 17Z" fill="#E7B99F"/>
+<path d="M560 346q-30-25-29-69" stroke="#F6E9DA" stroke-width="6" fill="none" opacity=".6"/>
+<path d="M610 344q-30-25-29-69" stroke="#F6E9DA" stroke-width="6" fill="none" opacity=".4"/>
+<path d="M171 357V169h12v188M161 193h32M168 260h18" stroke="#D7DBD7" stroke-width="7" fill="none"/>
+<path d="M110 356l44 0 0-161M110 356q10 28 44 0" stroke="#D7DBD7" stroke-width="6" fill="none"/>
+<circle cx="715" cy="412" r="8" fill="#E88B76"/><circle cx="735" cy="428" r="5" fill="#E88B76"/>
+</svg>

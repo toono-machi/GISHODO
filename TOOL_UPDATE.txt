@@ -1,0 +1,9 @@
+偽書堂公式HP — TOOLページ追加
+
+・既存メニューのデザインを変更せず、ナビゲーションのGAME直後に「TOOL」リンクを追加しました。
+・index.html / profile.html / breakfast.html / tool.html のPCメニューとスマホメニューで移動できます。
+・tool.html が現在表示中は、既存のactiveスタイルで選択状態がわかります。
+・7つの自作ツールを tool.html に掲載しました。
+・既存CSS、JavaScript、画像素材には変更を加えていません。
+
+公開時はHPフォルダ内のファイルをそのままGitHub Pagesの公開ディレクトリへ配置してください。
