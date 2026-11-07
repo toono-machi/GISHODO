@@ -171,3 +171,12 @@ h3{font-size:clamp(20px,2.4vw,31px);line-height:1.45;margin:21px 0 6px;letter-sp
 .about-byline .creator-profile-link span{margin-left:0}
 .about-byline .creator-profile-link .creator-profile-arrow{font:16px Georgia,serif;color:var(--coral)}
 .creator-profile-link:hover{border-color:var(--coral)}
+
+
+/* WOX counter: position next to the existing navigation; original nav styles remain unchanged. */
+.wox-access-counter{display:flex;align-items:center;justify-content:center;flex:0 0 auto;min-width:0;line-height:1;white-space:nowrap}
+.wox-access-counter img{display:inline-block;width:auto;height:auto;max-width:105px;max-height:42px;vertical-align:middle}
+.wox-access-counter a{display:inline-flex;align-items:center;justify-content:center}
+@media(min-width:801px) and (max-width:900px){.header:has(>.wox-access-counter){gap:10px;padding-inline:2.5%}.header:has(>.wox-access-counter) .desktop-nav{gap:12px}}
+@media(max-width:800px){.header>.wox-access-counter{margin-left:auto}.header>.menu-toggle{flex:0 0 44px}}
+@media(max-width:520px){.wox-access-counter img{max-width:84px;max-height:32px}.header:has(>.wox-access-counter){gap:8px}}

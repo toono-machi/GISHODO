@@ -17,21 +17,15 @@
   <link rel="stylesheet" href="profile.css?v=cup-icon-20261103" />
   <script defer src="site.config.js"></script>
   <script defer src="profile.js"></script>
+  <script>
+    if (!new URLSearchParams(location.search).has('standalone')) {
+      location.replace('index.html?view=profile' + location.hash);
+    }
+  </script>
 </head>
 <body class="profile-page">
-  <header class="header" id="top">
-    <a class="brand" href="index.html#home" aria-label="偽書堂 ホームに戻る">
-      <img class="brand-mark" src="assets/gishodo-logo.png" alt="" width="60" height="60" />
-      <span class="brand-text"><strong>偽書堂</strong><small>GISHODO / GAME CIRCLE</small></span>
-    </a>
-    <nav class="desktop-nav" aria-label="メインナビゲーション">
-      <a href="index.html#home">HOME</a><a href="index.html#games">GAME</a><a href="tool.html">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html" class="active" aria-current="page">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
-    </nav>
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
-  </header>
-  <nav class="mobile-nav" id="mobileNav" aria-label="モバイルメニュー" hidden>
-    <a href="index.html#home">HOME</a><a href="index.html#games">GAME</a><a href="tool.html">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html" aria-current="page">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
-  </nav>
+  <!-- トップバーは index.html で一元管理します。 -->
+
 
   <main>
     <section class="profile-hero" aria-labelledby="profileName">

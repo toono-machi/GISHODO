@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 145" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<defs><linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff5e5"/><stop offset="1" stop-color="#e7d9c9"/></linearGradient></defs>
+<!-- storyboard folio -->
+<rect x="20" y="16" width="215" height="116" rx="7" fill="url(#paper)" stroke="#263b44" stroke-width="2"/>
+<path d="M20 36h215" stroke="#263b44" stroke-width="2"/><path d="M21 23h213v13H21z" fill="#4a5d61"/>
+<g fill="#f7debc"><circle cx="31" cy="29.5" r="2.6"/><circle cx="41" cy="29.5" r="2.6"/><circle cx="51" cy="29.5" r="2.6"/></g>
+<g stroke="#66747a" stroke-width="1.5"><rect x="31" y="46" width="69" height="47" rx="2" fill="#e6d3ba"/><rect x="110" y="46" width="69" height="47" rx="2" fill="#ebddcb"/></g>
+<path d="M34 78l18-19 14 15 13-10 17 18M114 81l18-12 11 5 18-17 14 17" stroke="#647d82" stroke-width="3"/>
+<circle cx="58" cy="59" r="5" fill="#cc8777"/><circle cx="143" cy="60" r="5" fill="#cc8777"/>
+<g stroke="#b2a38f" stroke-width="4"><path d="M31 103h64m-64 11h41m35-11h62m-62 11h50"/></g>
+<!-- clapboard and pen -->
+<g transform="translate(187 68) rotate(-6)" stroke="#263b44" stroke-width="2"><rect x="0" y="19" width="56" height="42" rx="3" fill="#3e555d"/><path d="M2 2h54v17H2z" fill="#f2ddc0"/><path d="M5 4l10 12M23 4l10 12M41 4l10 12" stroke="#c16c5b" stroke-width="5"/><path d="M13 38h29M13 47h18" stroke="#e9d9c4" stroke-width="3"/></g>
+</svg>

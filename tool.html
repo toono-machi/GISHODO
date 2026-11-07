@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0D1F2E" />
-  <meta name="description" content="偽書堂の自作制作ツール一覧。シナリオ・音声・BGM・歌詞演出・ミステリー設計・背景素材生成など、ブラウザで使える7つの道具を紹介します。" />
+  <meta name="description" content="偽書堂の自作制作ツール一覧。シナリオ・音声・BGM・歌詞演出・ミステリー設計・背景素材生成など、ブラウザで使える10の道具を紹介します。" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="偽書堂" />
   <meta property="og:title" content="TOOL｜創作を支える、小さな道具たち。｜偽書堂" />
-  <meta property="og:description" content="ゲームや物語の制作に役立つ、自作ブラウザツール7選。" />
+  <meta property="og:description" content="ゲームや物語の制作に役立つ、自作ブラウザツール10選。" />
   <meta property="og:image" content="assets/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <title>TOOL｜創作を支える、小さな道具たち。｜偽書堂</title>
@@ -16,21 +16,15 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="tool.css" />
   <script defer src="tool.js"></script>
+  <script>
+    if (!new URLSearchParams(location.search).has('standalone')) {
+      location.replace('index.html?view=tool' + location.hash);
+    }
+  </script>
 </head>
 <body class="tool-page">
-  <header class="header" id="top">
-    <a class="brand" href="index.html#home" aria-label="偽書堂 ホームへ戻る">
-      <img class="brand-mark" src="assets/gishodo-logo.png" alt="" width="60" height="60" />
-      <span class="brand-text"><strong>偽書堂</strong><small>GISHODO / GAME CIRCLE</small></span>
-    </a>
-    <nav class="desktop-nav" aria-label="メインナビゲーション">
-      <a href="index.html#home">HOME</a><a href="index.html#games">GAME</a><a href="tool.html" class="active" aria-current="page">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
-    </nav>
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
-  </header>
-  <nav class="mobile-nav" id="mobileNav" aria-label="モバイルメニュー" hidden>
-    <a href="index.html#home">HOME</a><a href="index.html#games">GAME</a><a href="tool.html" aria-current="page">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
-  </nav>
+  <!-- トップバーは index.html で一元管理します。 -->
+
 
   <main class="tool-main">
     <section class="tool-hero" aria-labelledby="toolPageTitle">
@@ -44,7 +38,7 @@
         </div>
       </div>
       <p class="tool-lead">ゲームや映像、シナリオ制作のために作った、<br class="lead-break" />ブラウザで使える自作の制作ツールをまとめています。</p>
-      <div class="tool-catalog-line"><span>TOOLS CATALOG</span><span>01 — 07</span></div>
+      <div class="tool-catalog-line"><span>TOOLS CATALOG</span><span>01 — 10</span></div>
     </section>
 
     <section class="tool-list" aria-label="自作ツール一覧">
@@ -123,6 +117,39 @@
           <span class="tool-card-subtitle">BOOK SPINE GENERATOR</span>
           <span class="tool-card-description">本の高さ・幅・色をランダムに組み合わせて背表紙の列を生成。タイトルも添えられ、背景イラスト用の透過PNGとして保存できます。</span>
           <span class="tool-card-tags"><span>イラスト補助</span><span>背景素材</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="tool-card" href="https://toono-machi.github.io/CineScriptPro/" target="_blank" rel="noopener noreferrer" aria-label="CineScript Proを新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">08</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/cinescript.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">CineScript Pro</span>
+          <span class="tool-card-subtitle">STORYBOARD &amp; SCENARIO STUDIO</span>
+          <span class="tool-card-description">絵コンテとシナリオを一緒に管理。シーン・カットごとの作画、台詞やト書きの編集からPSD形式などへの書き出しまで、映像制作を支えます。</span>
+          <span class="tool-card-tags"><span>絵コンテ制作</span><span>シナリオ管理</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="tool-card" href="https://toono-machi.github.io/CharacterMaker/" target="_blank" rel="noopener noreferrer" aria-label="Character Makerを新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">09</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/character-maker.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">Character Maker</span>
+          <span class="tool-card-subtitle">CHARACTER SPRITE MAKER</span>
+          <span class="tool-card-description">ベース・髪・目・口・腕などの画像パーツを重ねて、立ち絵や表情差分を作成。組み合わせをプリセット保存し、透過PNGで書き出せます。</span>
+          <span class="tool-card-tags"><span>立ち絵制作</span><span>表情差分</span></span>
+        </span>
+        <span class="tool-card-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="tool-card" href="https://toono-machi.github.io/Koitsuzuri/" target="_blank" rel="noopener noreferrer" aria-label="恋綴りを新しいタブで開く">
+        <span class="tool-card-no" aria-hidden="true">10</span>
+        <span class="tool-card-illustration" aria-hidden="true"><img src="assets/tools/koitsuzuri.svg" alt="" width="270" height="145" loading="lazy" /></span>
+        <span class="tool-card-copy">
+          <span class="tool-card-title">恋綴り</span>
+          <span class="tool-card-subtitle">CHOCOLATE &amp; VANILLA ADV STUDIO</span>
+          <span class="tool-card-description">恋愛ADVやビジュアルノベルのシナリオ・分岐を整理する制作アトリエ。一般向け・R18作品に対応し、物語の構成やシーンを管理できます。</span>
+          <span class="tool-card-tags"><span>ADV制作</span><span>分岐設計</span></span>
         </span>
         <span class="tool-card-arrow" aria-hidden="true">→</span>
       </a>

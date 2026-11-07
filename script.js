@@ -85,7 +85,7 @@
     const navObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-        navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+        navLinks.forEach(a => a.classList.toggle('active', new URL(a.href, location.href).hash === '#' + entry.target.id));
       });
     }, {rootMargin:'-30% 0px -60% 0px'});
     document.querySelectorAll('main section[id]').forEach(el => navObserver.observe(el));

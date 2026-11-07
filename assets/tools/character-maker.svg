@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 145" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<defs><linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff5e5"/><stop offset="1" stop-color="#e7d9c9"/></linearGradient></defs>
+<!-- illustrated sprite layering, no facial features -->
+<rect x="27" y="13" width="149" height="119" rx="6" fill="url(#paper)" stroke="#263b44" stroke-width="2"/>
+<path d="M27 32h149" stroke="#263b44" stroke-width="2"/><path d="M28 20h147v12H28z" fill="#4a5d61"/>
+<g fill="#f7debc"><circle cx="38" cy="26" r="2.5"/><circle cx="47" cy="26" r="2.5"/><circle cx="56" cy="26" r="2.5"/></g>
+<!-- modular body/head silhouette with no eyes -->
+<path d="M88 65q-9-10-4-22 7-16 24-13 20 2 20 22 0 10-8 16l-1 9 17 9 8 36H67l8-36 16-9z" fill="#798c8b" stroke="#263b44" stroke-width="2"/>
+<path d="M83 44q14-24 42-6-1-19-23-19-23-1-27 26z" fill="#5b625c" stroke="#263b44" stroke-width="2"/>
+<path d="M77 91l17 12h29l15-13" stroke="#efdbbc" stroke-width="2"/>
+<path d="M57 112h94" stroke="#b8aa96" stroke-width="2"/>
+<!-- floating transparent preset cards -->
+<g stroke="#5b6f72" stroke-width="2"><rect x="158" y="33" width="74" height="48" rx="5" fill="#f8ead7"/><rect x="177" y="66" width="70" height="52" rx="5" fill="#fff5e5"/></g>
+<path d="M174 45h18m-18 8h41m-41 8h32" stroke="#b49e8a" stroke-width="3"/>
+<g stroke="#c0796a" stroke-width="2"><path d="M189 92c0-9 16-9 16 0 0-9 16-9 16 0 0 8-16 16-16 16s-16-8-16-16z" fill="#c0796a"/></g>
+<g fill="#c0796a"><circle cx="164" cy="91" r="3"/><circle cx="246" cy="57" r="3"/></g>
+</svg>

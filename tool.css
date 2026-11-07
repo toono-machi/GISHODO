@@ -41,6 +41,7 @@
 .tool-ornament i{position:relative;height:1px;width:190px;background:linear-gradient(90deg,#dfb894,#eecda7)}
 .tool-ornament i:after{content:"";position:absolute;right:-5px;top:-4px;width:9px;height:9px;background:#e9bb8a;transform:rotate(45deg)}
 .tool-ornament img{width:190px;height:132px;object-fit:contain;opacity:.84}
+.tool-card-grid>.tool-ornament{grid-column:1 / -1;min-height:145px;justify-content:center}
 .tool-endnote{font:10px Georgia,serif;letter-spacing:.28em;color:#7d9aa5;text-align:center;margin:35px 0 53px}
 .tool-endnote span{color:#e0b890;padding:0 12px}
 .tool-footer{border-top:1px solid rgba(246,233,218,.25)}

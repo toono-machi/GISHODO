@@ -14,9 +14,14 @@
   <title>偽書堂｜ミステリーと、少しの怪異を。</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="tool.css" />
+  <link rel="stylesheet" href="profile.css?v=cup-icon-20261103" />
+  <link rel="stylesheet" href="breakfast.css" />
   <script>document.documentElement.classList.add('js');</script>
   <script defer src="site.config.js"></script>
   <script defer src="script.js"></script>
+  <script defer src="site-breakfast.js"></script>
+  <script defer src="site-router.js"></script>
 </head>
 <body>
   <!-- INTRO: Intro can be disabled/configured in site.config.js. -->
@@ -31,22 +36,28 @@
 
   <div class="site-shell" id="siteShell">
     <header class="header" id="top">
-      <a class="brand" href="#home" aria-label="偽書堂 ホーム">
+      <a class="brand" href="index.html#home" aria-label="偽書堂 ホーム">
         <img class="brand-mark" src="assets/gishodo-logo.png" alt="" width="60" height="60" />
         <span class="brand-text"><strong>偽書堂</strong><small>GISHODO / GAME CIRCLE</small></span>
       </a>
       <nav class="desktop-nav" aria-label="メインナビゲーション">
-        <a href="#home" class="active">HOME</a><a href="#games">GAME</a><a href="tool.html">TOOL</a><a href="#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="#news">NEWS</a><a href="#contact">CONTACT</a>
+        <a href="index.html#home" class="active">HOME</a><a href="index.html#games">GAME</a><a href="tool.html">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
       </nav>
+    <!-- WOXアクセスカウンタータグ ここから -->
+    <div class="wox-access-counter" aria-label="アクセスカウンター">
+      <script src="https://gishodo.counter.wox.cc" language="JavaScript" type="text/javascript"></script><noscript><a href="https://wox.cc"><img src="https://gishodo.counter.wox.cc/?mode=noscript" alt="ホームページ ブログ レンタル掲示板 - WOX" title="ホームページ ブログ レンタル掲示板 - WOX" /></a></noscript>
+    </div>
+    <!-- WOXアクセスカウンタータグ ここまで -->
       <button class="menu-toggle" id="menuToggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
         <span></span><span></span><span></span>
       </button>
     </header>
     <nav class="mobile-nav" id="mobileNav" aria-label="モバイルメニュー" hidden>
-      <a href="#home">HOME</a><a href="#games">GAME</a><a href="tool.html">TOOL</a><a href="#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="#news">NEWS</a><a href="#contact">CONTACT</a>
+      <a href="index.html#home">HOME</a><a href="index.html#games">GAME</a><a href="tool.html">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
     </nav>
 
-    <main>
+    <div id="pageContent" aria-live="off">
+<main>
       <section class="hero" id="home" aria-labelledby="heroTitle">
         <div class="hero-art" aria-hidden="true"></div>
         <div class="hero-accent" aria-hidden="true"><span></span></div>
@@ -133,6 +144,358 @@
     </main>
 
     <footer class="footer"><div class="section-inner footer-grid"><div class="footer-brand"><img src="assets/gishodo-logo.png" alt="" width="64" height="64" /><div><strong>偽書堂</strong><small>ミステリーと、少しの怪異を。</small></div></div><div class="footer-meta"><a href="#home">BACK TO TOP ↑</a><small>© <span id="copyrightYear">2026</span> 偽書堂 / GISHODO</small></div></div></footer>
+</div><!-- /pageContent -->
+      <template id="view-tool" data-title="tool">
+<main class="tool-main">
+<section aria-labelledby="toolPageTitle" class="tool-hero">
+<div class="tool-frame">
+<div aria-hidden="true" class="tool-frame-upper"><span></span><span></span></div>
+<div class="tool-headline">
+<h1 id="toolPageTitle"><em>T</em>OOL</h1>
+<span aria-hidden="true" class="tool-title-divider"></span>
+<p>創作を支える、小さな道具たち。</p>
+<span class="tool-hero-label">TOOLS / 制作ツール</span>
+</div>
+</div>
+<p class="tool-lead">ゲームや映像、シナリオ制作のために作った、<br class="lead-break"/>ブラウザで使える自作の制作ツールをまとめています。</p>
+<div class="tool-catalog-line"><span>TOOLS CATALOG</span><span>01 — 10</span></div>
+</section>
+<section aria-label="自作ツール一覧" class="tool-list">
+<div class="tool-card-grid">
+<a aria-label="ことのはアトリエを新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/kotonoha_atelier/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">01</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/kotonoha.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">ことのはアトリエ</span>
+<span class="tool-card-subtitle">KS SCENARIO EDITOR</span>
+<span class="tool-card-description">ティラノビルダー向けのKSシナリオを作成・編集。台詞の抽出やキャラクター管理にも対応した、物語を書くためのエディター。</span>
+<span class="tool-card-tags"><span>シナリオ制作</span><span>ティラノビルダー</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<a aria-label="こえそろえを新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/koesoroe/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">02</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/koesoroe.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">こえそろえ</span>
+<span class="tool-card-subtitle">VOICE LEVELING STUDIO</span>
+<span class="tool-card-description">複数の台詞音声をまとめて読み込み、音量差を調整。WAV・MP3の聴き比べから一括書き出しまで、声の素材をきれいにそろえます。</span>
+<span class="tool-card-tags"><span>音声編集</span><span>一括音量調整</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<a aria-label="ループ仕立てを新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/Sound_loop_shitate/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">03</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/loop.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">ループ仕立て</span>
+<span class="tool-card-subtitle">SOUND LOOP STUDIO</span>
+<span class="tool-card-description">BGMの始点と終点を指定し、クロスフェードで自然な継ぎ目に。繰り返し再生に使いやすいループ音源を作るツール。</span>
+<span class="tool-card-tags"><span>BGM編集</span><span>ループ制作</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<a aria-label="ショート仕立てを新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/Short_shitate/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">04</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/short.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">ショート仕立て</span>
+<span class="tool-card-subtitle">SOUND SHORT EDITOR</span>
+<span class="tool-card-description">フル尺の楽曲の中間をカットし、前半と後半をなめらかにつないで短縮。試聴しながら自然なショート版を作成できます。</span>
+<span class="tool-card-tags"><span>楽曲編集</span><span>ショート版制作</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<a aria-label="真相設計室を新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/shinso_sekkeishitsu/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">05</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/shinso.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">真相設計室</span>
+<span class="tool-card-subtitle">MYSTERY SCENARIO ARCHITECT</span>
+<span class="tool-card-description">事件の真相・証拠・伏線・分岐を一か所に整理。情報公開管理や矛盾チェックもできる、ミステリーのための設計室。</span>
+<span class="tool-card-tags"><span>ミステリー制作</span><span>プロット設計</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<a aria-label="ChocoLyric Studioを新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/ChocoLyric_TyranoBuilder_Studio/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">06</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/chocolyric.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">ChocoLyric Studio</span>
+<span class="tool-card-subtitle">LYRICS &amp; END CREDITS</span>
+<span class="tool-card-description">歌詞表示・エンドロール・映像のタイミングや見た目をプレビューで調整。ティラノビルダー向けの演出データを書き出せます。</span>
+<span class="tool-card-tags"><span>歌詞演出</span><span>エンドロール</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<a aria-label="せぼねを新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/BOOK-SPINE-GENERATOR/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">07</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/sebone.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">せぼね</span>
+<span class="tool-card-subtitle">BOOK SPINE GENERATOR</span>
+<span class="tool-card-description">本の高さ・幅・色をランダムに組み合わせて背表紙の列を生成。タイトルも添えられ、背景イラスト用の透過PNGとして保存できます。</span>
+<span class="tool-card-tags"><span>イラスト補助</span><span>背景素材</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<a aria-label="CineScript Proを新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/CineScriptPro/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">08</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/cinescript.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">CineScript Pro</span>
+<span class="tool-card-subtitle">STORYBOARD &amp; SCENARIO STUDIO</span>
+<span class="tool-card-description">絵コンテとシナリオを一緒に管理。シーン・カットごとの作画、台詞やト書きの編集からPSD形式などへの書き出しまで、映像制作を支えます。</span>
+<span class="tool-card-tags"><span>絵コンテ制作</span><span>シナリオ管理</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<a aria-label="Character Makerを新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/CharacterMaker/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">09</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/character-maker.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">Character Maker</span>
+<span class="tool-card-subtitle">CHARACTER SPRITE MAKER</span>
+<span class="tool-card-description">ベース・髪・目・口・腕などの画像パーツを重ねて、立ち絵や表情差分を作成。組み合わせをプリセット保存し、透過PNGで書き出せます。</span>
+<span class="tool-card-tags"><span>立ち絵制作</span><span>表情差分</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<a aria-label="恋綴りを新しいタブで開く" class="tool-card" href="https://toono-machi.github.io/Koitsuzuri/" rel="noopener noreferrer" target="_blank">
+<span aria-hidden="true" class="tool-card-no">10</span>
+<span aria-hidden="true" class="tool-card-illustration"><img alt="" height="145" loading="lazy" src="assets/tools/koitsuzuri.svg" width="270"/></span>
+<span class="tool-card-copy">
+<span class="tool-card-title">恋綴り</span>
+<span class="tool-card-subtitle">CHOCOLATE &amp; VANILLA ADV STUDIO</span>
+<span class="tool-card-description">恋愛ADVやビジュアルノベルのシナリオ・分岐を整理する制作アトリエ。一般向け・R18作品に対応し、物語の構成やシーンを管理できます。</span>
+<span class="tool-card-tags"><span>ADV制作</span><span>分岐設計</span></span>
+</span>
+<span aria-hidden="true" class="tool-card-arrow">→</span>
+</a>
+<div aria-hidden="true" class="tool-ornament">
+<div><span>BROWSER TOOLS</span><span>FOR CREATION</span><i></i></div>
+<img alt="" height="145" loading="lazy" src="assets/tools/shelf.svg" width="270"/>
+</div>
+</div>
+<p class="tool-endnote"><span>✧</span> MADE WITH CURIOSITY, FOR CREATORS <span>✧</span></p>
+</section>
+</main>
+<footer class="footer tool-footer"><div class="section-inner footer-grid"><a class="footer-brand" href="index.html#home"><img alt="" height="64" src="assets/gishodo-logo.png" width="64"/><div><strong>偽書堂</strong><small>ミステリーと、少しの怪異を。</small></div></a><div class="footer-meta"><a href="#top">BACK TO TOP ↑</a><small>© <span id="copyrightYear">2026</span> 偽書堂 / GISHODO</small></div></div></footer>
+    </template>
+    <template id="view-profile" data-title="profile">
+<main>
+<section aria-labelledby="profileName" class="profile-hero">
+<div aria-hidden="true" class="profile-hero-beam"></div>
+<div class="profile-hero-inner">
+<div class="profile-hero-copy">
+<p class="eyebrow"><i></i> CREATOR PROFILE <span class="profile-quiet">— GISHODO</span></p>
+<h1 id="profileName">遠廼まち</h1>
+<p class="profile-romaji">toono-machi</p>
+<p class="profile-roles">声優 <span>/</span> イラスト <span>/</span> シナリオ <span>/</span> 開発</p>
+<div aria-hidden="true" class="short-line"></div>
+<p class="profile-tagline">怠惰を極めすぎているプリン頭<span class="jp-dot">。</span></p>
+<p class="profile-summary">ミステリー、ホラー、ヤンデレ、サイコパスが大好物。<br/>自分でできることはなんでもやる、<br/>ほぼ自給自足の０円食堂クリエイターです。</p>
+<a class="outline-btn profile-back-btn" href="index.html#about">偽書堂について <span aria-hidden="true">↗</span></a>
+</div>
+<div class="profile-visual">
+<div aria-hidden="true" class="profile-visual-frames"></div>
+<img alt="プリンを頭にかぶってカップを持つ遠廼まちのオリジナルアイコン" fetchpriority="high" height="1000" src="assets/toono-machi-icon.png" width="1000"/>
+<span aria-hidden="true" class="profile-visual-number">PROFILE — 001</span>
+</div>
+</div>
+<p aria-hidden="true" class="profile-side-note">FICTION / REALITY</p>
+</section>
+<section aria-labelledby="profileInfoTitle" class="profile-info">
+<div class="section-inner">
+<div class="profile-section-head"><span class="eyebrow"><i></i> INTRODUCTION</span><span class="profile-head-rule"></span><span class="profile-no">01 — PROFILE</span></div>
+<h2 class="profile-info-title" id="profileInfoTitle">好きなものを、好きなだけ<span class="jp-dot">。</span></h2>
+<div class="profile-info-grid">
+<article class="profile-info-panel">
+<p class="profile-label">ABOUT <span>/ 自己紹介</span></p>
+<h3>気ままに、何でも作る。</h3>
+<p>声優、イラスト、シナリオ、開発。<br/>自分でできることはなんでもやる、<br/>ほぼ自給自足の０円食堂クリエイターです。</p>
+<div aria-hidden="true" class="profile-panel-deco profile-deco-cup"><img alt="" class="profile-cup-image" height="800" loading="lazy" src="assets/cup-icon.png" width="800"/></div>
+</article>
+<article class="profile-info-panel">
+<p class="profile-label">AI TOOLS <span>/ 主に使用しているAIツール</span></p>
+<h3>制作を支えるツール。</h3>
+<div class="profile-tool-list">
+<div class="profile-tool"><span aria-hidden="true" class="tool-mark">01</span><div><strong>ChatGPT</strong><p>スクリプト制作 / UIデザインのアシスト</p></div></div>
+<div class="profile-tool"><span aria-hidden="true" class="tool-mark">02</span><div><strong>Lovart</strong><p>UIデザインのアシスト / 背景グラフィックのアシスト</p></div></div>
+<div class="profile-tool"><span aria-hidden="true" class="tool-mark">03</span><div><strong>Suno</strong><p>主題歌やBGM制作</p></div></div>
+</div>
+</article>
+<article class="profile-info-panel">
+<p class="profile-label">LIKES <span>/ 好きなもの</span></p>
+<h3>こういう物語が、好き。</h3>
+<div aria-label="好きなジャンル" class="profile-likes"><span>ミステリー</span><span>ホラー</span><span>ヤンデレ</span><span>サイコパス</span></div>
+<p>少し不穏で、目を離せない。<br/>そんな物語に惹かれます。</p>
+<div aria-hidden="true" class="profile-panel-deco profile-deco-moon"><span></span></div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="profileScopeTitle" class="profile-scope">
+<div class="section-inner">
+<div class="profile-section-head"><span class="eyebrow"><i></i> CREATIVE FIELDS</span><span class="profile-head-rule"></span><span class="profile-no">02 — ACTIVITIES</span></div>
+<div class="profile-scope-title-row"><h2 id="profileScopeTitle">できること<span class="jp-dot">。</span></h2><p>自分でできることは、なんでも。</p></div>
+<div class="profile-scope-grid">
+<div class="profile-scope-card"><span class="scope-index">01</span><span aria-hidden="true" class="scope-symbol">◉</span><h3>声優</h3><p>VOICE</p></div>
+<div class="profile-scope-card"><span class="scope-index">02</span><span aria-hidden="true" class="scope-symbol">✎</span><h3>イラスト</h3><p>ILLUSTRATION</p></div>
+<div class="profile-scope-card"><span class="scope-index">03</span><span aria-hidden="true" class="scope-symbol">❞</span><h3>シナリオ</h3><p>SCENARIO</p></div>
+<div class="profile-scope-card"><span class="scope-index">04</span><span aria-hidden="true" class="scope-symbol">⌘</span><h3>開発</h3><p>DEVELOPMENT</p></div>
+</div>
+<p class="profile-works-home">ゲーム作品の情報は <a href="index.html#games">偽書堂のトップページ <span aria-hidden="true">↗</span></a> からご覧いただけます。</p>
+</div>
+</section>
+<section aria-labelledby="profileContactTitle" class="profile-contact">
+<div class="section-inner profile-contact-inner">
+<div><p class="eyebrow"><i></i> CONTACT / ご連絡</p><h2 id="profileContactTitle">物語の、その先で。</h2><p>お問い合わせは偽書堂の公式ページからお願いします。</p></div>
+<a class="outline-btn" href="index.html#contact">お問い合わせ先へ <span aria-hidden="true">↗</span></a>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="section-inner footer-grid">
+<div class="footer-brand"><img alt="" height="64" src="assets/gishodo-logo.png" width="64"/><div><strong>偽書堂</strong><small>ミステリーと、少しの怪異を。</small></div></div>
+<div class="footer-meta"><a href="index.html#home">BACK TO HOME ↗</a><small>© <span id="copyrightYear">2026</span> 偽書堂 / GISHODO</small></div>
+</div>
+</footer>
+    </template>
+    <template id="view-breakfast" data-title="breakfast">
+<main>
+<section aria-label="最■の朝食を、君に。タイトル" class="bf-hero">
+<img alt="朝日が差し込む食卓で、笑顔の彼とフレンチトースト。最■の朝食を、君に。" class="bf-hero-banner" decoding="async" fetchpriority="high" height="768" src="assets/breakfast-hero-banner.webp" width="2048"/>
+<div aria-hidden="true" class="bf-hero-background"></div>
+<div aria-hidden="true" class="bf-hero-light"></div>
+<img alt="" aria-hidden="true" class="bf-hero-person" fetchpriority="high" src="assets/breakfast-him.png"/>
+<div class="bf-hero-content">
+<p class="bf-overline">GISHODO / ORIGINAL GAME <span>CASE — 001</span></p>
+<h1 class="bf-title"><img alt="最■の朝食を、君に。" fetchpriority="high" src="assets/breakfast-logo.png"/></h1>
+<p class="bf-hero-catch">なんでもない朝が、<br/>きっと、どこか特別だった。</p>
+<p class="bf-hero-blurb">これは、あなたと、<br/>とある青年の、朝食の話――</p>
+<a aria-label="イントロダクションへ進む" class="bf-hero-arrow" href="#introduction">SCROLL <span aria-hidden="true">↓</span></a>
+</div>
+<p class="bf-hero-vertical">きみと食べる、どんな朝だって、きっといい。</p>
+</section>
+<nav aria-label="作品ページ内の目次" class="bf-local-nav">
+<a href="#introduction">INTRODUCTION</a>
+<a href="#characters">CHARACTER</a>
+<a href="#screenshots">SCREENSHOTS</a>
+<a href="#distribution">DOWNLOAD</a>
+<a href="#endings">ENDING &amp; HINT</a>
+<a href="#credits">CREDIT</a>
+</nav>
+<section aria-labelledby="bfIntroTitle" class="bf-intro bf-light" id="introduction">
+<div class="bf-section-inner bf-intro-layout">
+<div class="bf-intro-copy">
+<div class="bf-section-kicker"><span class="bf-number">01</span><span>INTRODUCTION</span><i></i></div>
+<h2 id="bfIntroTitle">イントロダクション</h2>
+<p>目覚めた朝、やさしい声がした。<br/>窓からは柔らかな光が差し込んでいる。<br/>隣には、少し眠たそうな、見知った青年。</p>
+<p>今日は、あなたが朝ごはんを作ることにした。<br/>食パンを切って、卵を割って、丁寧に焼いて。<br/>大切な人のための、ごく普通の朝。</p>
+<p>――そんな、ありふれた時間の物語。</p>
+<div class="bf-intro-handnote">きみと食べる朝が、好きだ。</div>
+<div class="bf-genre-line"><span>料理シミュレーション</span><span>叙述トリック</span><span>心理ホラー</span></div>
+</div>
+<div aria-label="作品背景の紹介" class="bf-snapshot-preview">
+<div class="bf-snapshot-major"><img alt="明るい朝の寝室の背景イラスト" loading="lazy" src="assets/breakfast-bedroom.webp"/><span>BACKGROUND ART / BEDROOM</span></div>
+<div class="bf-snapshot-thumbs"><img alt="ダイニングルームの背景イラスト" loading="lazy" src="assets/breakfast-living.webp"/><img alt="朝食のタイトル背景イラスト" loading="lazy" src="assets/breakfast-title.webp"/></div>
+<small>※ 背景素材を掲載しています。プレイ画面は後日公開予定です。</small>
+</div>
+</div>
+</section>
+<section aria-labelledby="bfCharTitle" class="bf-characters" id="characters">
+<div class="bf-section-inner">
+<div class="bf-section-kicker bf-kicker-dark"><span class="bf-number">02</span><span>CHARACTER</span><i></i></div>
+<div class="bf-character-heading"><h2 id="bfCharTitle">キャラクター紹介</h2><p>イラストを選択すると全身表示を開きます。</p></div>
+<div class="bf-character-grid">
+<article class="bf-character-card">
+<button aria-label="主人公の紹介画像を拡大表示" class="bf-character-image bf-character-protagonist" data-character="protagonist" type="button">
+<span aria-hidden="true" class="bf-portrait-unknown"><b>?</b><small>VISUAL UNREVEALED</small></span>
+<span class="bf-photo-cta">拡大して見る <b>↗</b></span>
+</button>
+<div class="bf-character-text"><p class="bf-char-index">01 / THE PROTAGONIST</p><h3>主人公</h3><p>いつもの朝、目を覚ましたあなた。<br/>今日は、大切な人のために朝食を作ることにした。<br/>その姿も、声も、プレイヤーには明かされない。</p><p class="bf-char-note">※ 主人公の外見は非公開です。</p></div>
+</article>
+<article class="bf-character-card">
+<button aria-label="彼の全身立ち絵を見る" class="bf-character-image bf-character-him" data-character="him" type="button">
+<img alt="穏やかに微笑む青年・彼" loading="lazy" src="assets/breakfast-him.png"/>
+<span class="bf-photo-cta">全身を見る <b>↗</b></span>
+</button>
+<div class="bf-character-text"><p class="bf-char-index">02 / HIM</p><h3>彼</h3><p>目が覚めると、隣にいる青年。<br/>やさしく穏やかで、いつもあなたを気遣ってくれる。<br/>あなたの作る朝食を、心から楽しみにしている。</p><p class="bf-char-quote">「ふふ。楽しみにしてるね」</p></div>
+</article>
+<article class="bf-character-card">
+<button aria-label="謎の鑑定士の全身シルエットを見る" class="bf-character-image bf-character-koyomi" data-character="mystery" type="button">
+<img alt="正体を伏せた鑑定士の全身シルエット" loading="lazy" src="assets/breakfast-koyomi-silhouette.png"/>
+<span aria-hidden="true" class="bf-locked-mark">? ? ?</span>
+<span class="bf-photo-cta">シルエットを見る <b>↗</b></span>
+</button>
+<div class="bf-character-text"><p class="bf-char-index">03 / UNKNOWN</p><h3>？？？</h3><p>不可解な出来事を調べ、記録する鑑定士。<br/>人知れず起こる異常な現象を追い、調査を続けている。<br/>その人物がこの朝にどう関わるのかは、まだわからない。</p><p class="bf-char-note">※ 立ち絵はシルエットのみ公開中。</p></div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="bfShotTitle" class="bf-screenshots bf-light" id="screenshots">
+<div class="bf-section-inner">
+<div class="bf-section-kicker"><span class="bf-number">03</span><span>SCREENSHOTS</span><i></i></div>
+<div class="bf-section-heading"><h2 id="bfShotTitle">ゲーム画面スクリーンショット</h2><p>完成したゲーム画面を後日追加予定です。</p></div>
+<div class="bf-shot-grid">
+<div class="bf-shot-card"><img alt="寝室背景のプレビュー" loading="lazy" src="assets/breakfast-bedroom.webp"/><div class="bf-shot-shade"><span>SCREENSHOT 01</span><strong>準備中</strong><small>掲載画像は背景素材です</small></div></div>
+<div class="bf-shot-card"><img alt="ダイニングルーム背景のプレビュー" loading="lazy" src="assets/breakfast-living.webp"/><div class="bf-shot-shade"><span>SCREENSHOT 02</span><strong>準備中</strong><small>掲載画像は背景素材です</small></div></div>
+<div class="bf-shot-card"><img alt="朝食タイトル背景のプレビュー" loading="lazy" src="assets/breakfast-title.webp"/><div class="bf-shot-shade"><span>SCREENSHOT 03</span><strong>準備中</strong><small>掲載画像は背景素材です</small></div></div>
+</div>
+</div>
+</section>
+<section aria-label="配布と攻略情報" class="bf-details bf-light">
+<div class="bf-section-inner bf-detail-grid">
+<section aria-labelledby="bfDistTitle" class="bf-detail-column" id="distribution">
+<div class="bf-section-kicker"><span class="bf-number">04</span><span>DISTRIBUTION</span><i></i></div>
+<h2 id="bfDistTitle">配布場所</h2>
+<div class="bf-download-box">
+<span aria-hidden="true" class="bf-download-icon">↓</span>
+<div><strong id="distributionStatus">公開準備中</strong><p id="distributionNote">配布ページの公開後、こちらからご案内します。</p></div>
+<a hidden="" href="#" id="distributionLink" rel="noopener noreferrer" target="_blank">プレイする ↗</a>
+</div>
+<dl class="bf-game-meta"><div><dt>ジャンル</dt><dd>料理シミュレーション × 叙述トリック × 心理ホラー</dd></div><div><dt>プレイ時間</dt><dd>1周 約15〜25分（想定）</dd></div><div><dt>エンディング</dt><dd>全3種類</dd></div><div><dt>制作環境</dt><dd>ティラノビルダー / JavaScript</dd></div></dl>
+</section>
+<section aria-labelledby="bfEndingTitle" class="bf-detail-column" id="endings">
+<div class="bf-section-kicker"><span class="bf-number">05</span><span>ENDING &amp; HINT</span><i></i></div>
+<h2 id="bfEndingTitle">エンディングリストと攻略ヒント</h2>
+<p class="bf-spoiler-note">ここから先には、エンディング名と分岐に関するネタバレを含みます。ゲームを楽しんだ後にご覧ください。</p>
+<button aria-controls="spoilerContent" aria-expanded="false" class="bf-dark-button" id="spoilerToggle" type="button">エンディングリスト・攻略ヒントを見る <span aria-hidden="true">↗</span></button>
+<div class="bf-spoiler-content" hidden="" id="spoilerContent">
+<h3>エンディングリスト</h3>
+<ol><li><strong>最善の朝</strong><span>完璧でなくても、幸せな朝。</span></li><li><strong>最高の朝</strong><span>とびきりおいしい朝食と、幸せな時間。</span></li><li><strong>最後の朝</strong><span>いつもの朝の、その先へ。</span></li></ol>
+<h3>攻略のヒント</h3>
+<p>「最善」「最高」は料理の仕上がりで分岐します。焼き加減や盛り付けを工夫してみましょう。</p>
+<p>もう一つの結末は、料理の点数だけでは決まりません。食後のひととき、どんな行動を選ぶかに注目してください。</p>
+</div>
+</section>
+</div>
+</section>
+<section aria-labelledby="bfCreditsTitle" class="bf-credits bf-light" id="credits">
+<div class="bf-section-inner bf-credit-layout">
+<div><div class="bf-section-kicker"><span class="bf-number">06</span><span>CREDIT</span><i></i></div><h2 id="bfCreditsTitle">クレジット</h2></div>
+<dl class="bf-credit-list">
+<div><dt>企画・制作</dt><dd>偽書堂</dd></div>
+<div><dt>シナリオ・イラスト・開発</dt><dd>遠廼まち</dd></div>
+<div><dt>制作支援</dt><dd>ChatGPT / Lovart / Suno</dd></div>
+<div><dt>使用エンジン</dt><dd>ティラノビルダー</dd></div>
+<div><dt>その他</dt><dd>公開時に追記予定</dd></div>
+</dl>
+<p class="bf-credits-sign">また、どこかの朝に。</p>
+</div>
+</section>
+</main>
+<footer class="footer bf-footer"><div class="section-inner footer-grid"><a class="footer-brand" href="index.html#home"><img alt="" height="64" src="assets/gishodo-logo.png" width="64"/><div><strong>偽書堂</strong><small>ミステリーと、少しの怪異を。</small></div></a><div class="footer-meta"><a href="#pageTop">BACK TO TOP ↑</a><small>© <span id="copyrightYear">2026</span> 偽書堂 / GISHODO</small></div></div></footer>
+<dialog aria-labelledby="portraitName" class="bf-portrait-dialog" id="portraitDialog">
+<div class="bf-portrait-content">
+<button aria-label="閉じる" class="bf-portrait-close" id="closePortrait" type="button">×</button>
+<p class="bf-modal-label">CHARACTER / FULL VIEW</p>
+<div class="bf-portrait-stage"><img alt="" id="portraitImage" src="assets/breakfast-him.png"/><div class="bf-portrait-placeholder" hidden="" id="portraitPlaceholder"><span>?</span><small>APPEARANCE UNREVEALED</small></div></div>
+<div class="bf-portrait-bottom"><div><h2 id="portraitName">彼</h2><p id="portraitDesc"></p></div><div class="bf-portrait-controls"><button aria-label="前のキャラクター" id="previousPortrait" type="button">←</button><span id="portraitCount">02 / 03</span><button aria-label="次のキャラクター" id="nextPortrait" type="button">→</button></div></div>
+</div>
+</dialog>
+    </template>
   </div>
 
   <dialog id="gameDialog" class="game-dialog" aria-labelledby="dialogTitle"><div class="dialog-layout"><button class="dialog-close" id="closeDialog" type="button" aria-label="閉じる">×</button><span class="eyebrow">GAME DETAILS</span><h2 id="dialogTitle"></h2><p id="dialogCategory" class="dialog-category"></p><p id="dialogDescription" class="dialog-description"></p><a id="dialogPlay" class="outline-btn" target="_blank" rel="noopener noreferrer" hidden>ゲームをプレイ ↗</a><p id="dialogNote" class="dialog-note">配布・詳細ページは準備中です。</p></div></dialog>

@@ -17,21 +17,15 @@
   <link rel="stylesheet" href="breakfast.css">
   <script defer src="site.config.js"></script>
   <script defer src="breakfast.js"></script>
+  <script>
+    if (!new URLSearchParams(location.search).has('standalone')) {
+      location.replace('index.html?view=breakfast' + location.hash);
+    }
+  </script>
 </head>
 <body class="breakfast-page">
-  <header class="header breakfast-global-header" id="pageTop">
-    <a class="brand" href="index.html#home" aria-label="偽書堂 トップページへ戻る">
-      <img class="brand-mark" src="assets/gishodo-logo.png" alt="" width="60" height="60">
-      <span class="brand-text"><strong>偽書堂</strong><small>GISHODO / GAME CIRCLE</small></span>
-    </a>
-    <nav class="desktop-nav" aria-label="サークルナビゲーション">
-      <a href="index.html#home">HOME</a><a class="active" href="index.html#games">GAME</a><a href="tool.html">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
-    </nav>
-    <button class="menu-toggle" type="button" id="menuToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
-  </header>
-  <nav class="mobile-nav" id="mobileNav" aria-label="モバイルメニュー" hidden>
-    <a href="index.html#home">HOME</a><a href="index.html#games">GAME</a><a href="tool.html">TOOL</a><a href="index.html#about">ABOUT</a><a href="profile.html">PROFILE</a><a href="index.html#news">NEWS</a><a href="index.html#contact">CONTACT</a>
-  </nav>
+  <!-- トップバーは index.html で一元管理します。 -->
+
   <main>
     <section class="bf-hero" aria-label="最■の朝食を、君に。タイトル">
       <img class="bf-hero-banner" src="assets/breakfast-hero-banner.webp" width="2048" height="768" alt="朝日が差し込む食卓で、笑顔の彼とフレンチトースト。最■の朝食を、君に。" fetchpriority="high" decoding="async">
